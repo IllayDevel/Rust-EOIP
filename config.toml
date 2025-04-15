@@ -1,0 +1,21 @@
+[general]
+idle_timeout = 100
+bind_ip = "0.0.0.0"
+protocol = 47
+packet_header = "de ad be ef 00 00 00 00"
+
+preload_triggers = []
+
+[[postload_triggers]]
+cmd = "echo {remote_ip} > ddd.ccf"
+
+[[postload_triggers]]
+cmd = "echo 1> ccf.ddd"
+
+[[tap_tunnels]]
+id = 16587
+remote_ip = "192.168.100.1"
+iface = "eoip-test"
+tap_ip = ""
+
+fwd_tunnels = []
