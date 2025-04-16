@@ -7,7 +7,7 @@ All settings are located in the config.toml file. Here is an example of this fil
     [general]
     idle_timeout = 100
     bind_ip = "0.0.0.0"
-    bind_port = 47
+    protocol = 47
     packet_header = "20 01 64 00 00 00 00 00"
     
     preload_triggers = []
